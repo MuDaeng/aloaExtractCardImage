@@ -35,7 +35,7 @@ def preprocess_image(image_path: str) -> np.ndarray:
 @app.post("/extract/card")
 async def extract(card: CardImage):
     print(card.image_dir)
-    card_names = ['black', 'busik', 'byul', 'changing', 'dal', 'diun', 'dotae', 'gwangdae', 'gwangki', 'gyunhyun', 'hwanhui', 'royal', 'samdusa', 'simpan', 'undefined', 'unsu', 'xEmpty', 'yuryeong', 'zEmpty']
+    card_names = ['black', 'busik', 'byul', 'changing', 'dal', 'diun', 'dotae', 'gisa', 'gwangdae', 'gwangki', 'gyunhyun', 'hwanhui', 'royal', 'samdusa', 'simpan', 'undefined', 'unsu', 'xEmpty', 'yuryeong', 'zEmpty']
     results = []
     for image in card.file_names:
         file_name = image
